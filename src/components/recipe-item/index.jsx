@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 
-export default function RecipeItem({ item, key }) {
+export default function RecipeItem({ item }) {
   return (
     <div
-      key={key}
       className="flex flex-col w-80 overflow-hidden p-5 bg-white/75 shadow-xl gap-5 bolder-2 rounded-2xl bolder-white"
     >
       <div className="h-40 flex justify-center overflow-hidden items-center rounded-xl">

@@ -15,8 +15,9 @@ export default function GlobalState({ children }) {
       );
 
       const data = await res.json();
+
       if (data?.data?.recipes) {
-        setRecipeList(data?.data?.recipe);
+        setRecipeList(data?.data?.recipes);
         setLoading(false);
         setSearchParam("");
       }
